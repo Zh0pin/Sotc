@@ -1,0 +1,175 @@
+spriteTypes = {
+
+### CONSCRIPTION LAWS
+	spriteType = {
+		name = "GFX_idea_disarmed_nation"
+		texturefile = "gfx/interface/ideas/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_only"
+		texturefile = "gfx/interface/ideas/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_conscription"
+		texturefile = "gfx/interface/ideas/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_extensive_conscription"
+		texturefile = "gfx/interface/ideas/idea_extensive_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_service_by_requirement"
+		texturefile = "gfx/interface/ideas/idea_service_by_requirement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_all_adults_serve"
+		texturefile = "gfx/interface/ideas/idea_all_adults_serve.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_scraping_the_barrel"
+		texturefile = "gfx/interface/ideas/idea_scraping_the_barrel.dds"
+	}
+	
+### ECONOMY LAWS
+
+	spriteType = {
+		name = "GFX_idea_undisturbed_isolation"
+		texturefile = "gfx/interface/ideas/idea_undisturbed_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_isolation"
+		texturefile = "gfx/interface/ideas/idea_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_civilian_economy"
+		texturefile = "gfx/interface/ideas/idea_civilian_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_low_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/idea_low_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_partial_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/idea_partial_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_war_economy"
+		texturefile = "gfx/interface/ideas/idea_war_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tot_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/idea_tot_economic_mobilisation.dds"
+	}
+	
+### GENERIC economic ideas
+
+	spriteType = {
+		name = "GFX_idea_closed_economy"
+		texturefile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_limited_exports"
+		texturefile = "gfx/interface/ideas/idea_generic_limited_exports.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_idea_free_trade"
+		texturefile = "gfx/interface/ideas/idea_generic_free_trade.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_export_focus"
+		texturefile = "gfx/interface/ideas/idea_generic_export_focus.dds"
+	}
+	
+### LEAGUE OF NATIONS
+
+    spriteType = {
+		name = "GFX_idea_league_of_nations_member"
+		texturefile = "gfx/interface/ideas/league_of_nations.dds"
+	}
+	
+###  GERMANY
+
+    SpriteType = {
+        name = "GFX_idea_WEI_reichstag"
+        texturefile = "gfx/interface/ideas/WEI_reichstag.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_idea_WEI_airship"
+        texturefile = "gfx/interface/ideas/WEI_airship.dds"
+    }
+	
+###  RUSSIA
+
+    SpriteType = {
+        name = "GFX_idea__RUS_vyacheslav_molotov"
+        texturefile = "gfx/interface/ideas/RUS/idea_RUS_vyacheslav_molotov.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_idea_RUS_army"
+        texturefile = "gfx/interface/ideas/RUS_army.dds"
+    }
+
+
+
+    SpriteType = {
+        name = "GFX_idea_RUS_inter"
+        texturefile = "gfx/interface/ideas/RUS_inter.dds"
+    }
+
+
+
+    SpriteType = {
+        name = "GFX_idea_RUS_rev"
+        texturefile = "gfx/interface/ideas/RUS_rev.dds"
+    }
+
+
+
+    SpriteType = {
+        name = "GFX_idea_RUS_ruble"
+        texturefile = "gfx/interface/ideas/RUS_ruble.dds"
+    }
+
+
+
+    SpriteType = {
+        name = "GFX_idea_RUS_party"
+        texturefile = "gfx/interface/ideas/RUS_party.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_idea_RUS_prom"
+        texturefile = "gfx/interface/ideas/RUS_prom.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_idea_RUS_white_emigartion"
+        texturefile = "gfx/interface/ideas/RUS_white_emigartion.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_idea_GNE_mon_crisis"
+        texturefile = "gfx/interface/ideas/GNE_mon_crisis.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_idea_GNE_rule_brit"
+        texturefile = "gfx/interface/ideas/GNE_rule_brit.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_idea_VUN_bel_tr"
+        texturefile = "gfx/interface/ideas/VUN_bel_tr.dds"
+    }
+	
+###UKRAINE
+    SpriteType = {
+        name = "GFX_idea_UMR_national_terrorism"
+        texturefile = "gfx/interface/ideas/UMR_nationalistic_terrorism.dds"
+    }
+}

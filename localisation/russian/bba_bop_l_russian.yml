@@ -1,0 +1,40 @@
+﻿l_russian:
+
+ BOP_TOOLTIP:1 "§Y[root.GetPowerBalanceName]§! в данный момент [?.root.power_balance_value|0%H] на следующей стороне: §Y[root.GetActiveSideName]§!"
+ BOP_TOOLTIP_TREND:0 "Баланс сил склоняется в следующую сторону: §Y[root.GetTrendingSideName]§! на [root.GetBopTrendTextIcon][root.GetChangeRateDesc].\n[root.GetPowerBalanceModDesc]"
+ BOP_TOOLTIP_STABLE:1 "Баланс сил в данное время стабилен."
+ BOP_LEFT_SIDE_TOOLTIP:0 "[root.GetLeftSideName]"
+ BOP_RIGHT_SIDE_TOOLTIP:0 "[root.GetRightSideName]"
+ BOP_ACTIVE_RANGE_DESC:0 "[root.GetActiveRangeName]"
+ BOP_ACTIVE_RANGE_TOOLTIP:0 "[root.GetActiveRangeModDesc][root.GetActiveRangeRuleDesc]"
+
+ BOP_CHANGE_RATE_DAILY:2 "$VALUE|2%H$ в день"
+ BOP_CHANGE_RATE_WEEKLY:2 "$VALUE|2%H$ в неделю"
+
+ BOP_RANGE_DESC:0 "$NAME|Y$\nДальность: $MIN|%Y$–$MAX|%Y$\n$MODIFIER$\n$RULE$\n$ACTIVATION_EFFECT$\n$DEACTIVATION_EFFECT$"
+ BOP_RANGE_MODIFIER:0 "§YМодификаторы:§!\n$DESC$"
+ BOP_RANGE_RULE:0 "§YПравила:§!\n$DESC$"
+ BOP_RANGE_ACTIVATION_EFFECT:0 "\n§YЭффект активации:§!\n$DESC$"
+ BOP_RANGE_DEACTIVATION_EFFECT:0 "\n§YЭффект деактивации:§!\n$DESC$"
+ 
+ BOP_PERCENTAGE:0 "$VALUE|0%$"
+ BOP_LEVELS:0 "$UNLOCKED$/$TOTAL$"
+ 
+ BOP_STATIC_MODIFIER:0 "$NAME|H$"
+ 
+ RUS_party_power_balance:0 "Баланс сил в партии"
+ RUS_balance_range:0 "Силы равны"
+ RUS_right_wing_low_control_range:0 "Перевес в сторону правых"
+ RUS_right_wing_medium_control_range:0 "Правые доминируют"
+ RUS_right_wing_high_control_range:0 "Правые контролируют политику"
+ RUS_right_wing_total_control_range:0 "Правый ЦК"
+ RUS_left_wing_low_control_range:0 "Перевес в сторону левых"
+ RUS_left_wing_medium_control_range:0 "Левые доминируют"
+ RUS_left_wing_high_control_range:0 "Левые контролируют политику"
+ RUS_left_wing_total_control_range:0 "Левый ЦК"
+
+ 
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ BOP_RANGE_ACTIVATE_EFFECT:0 "Эффект после активации:\n$ACTIVATE_EFFECT$"
+ BOP_RANGE_DEACTIVATE_EFFECT:0 "Эффект после деактивации:\n$DEACTIVATE_EFFECT$"

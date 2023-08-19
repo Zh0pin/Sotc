@@ -1,0 +1,280 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+	name = "GFX_focus_RUS_fourth_congress"
+	texturefile = "gfx/interface/goals/RUS_fourth_congress.dds"			
+	}	
+	
+	SpriteType = {
+		name = "GFX_goal_unknown"
+		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_integration_question"
+	texturefile = "gfx/interface/goals/RUS_integration_question.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_world_revolution"
+	texturefile = "gfx/interface/goals/RUS_world_revolution.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_united_army"
+	texturefile = "gfx/interface/goals/RUS_united_army.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_helping_comrades"
+	texturefile = "gfx/interface/goals/RUS_helping_comrades.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_leningrad_agreements"
+	texturefile = "gfx/interface/goals/RUS_leningrad_agreements.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_romanian_proletarias"
+	texturefile = "gfx/interface/goals/RUS_romanian_proletarias.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_finish_congress"
+	texturefile = "gfx/interface/goals/RUS_finish_congress.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_kill_trotsky"
+	texturefile = "gfx/interface/goals/RUS_kill_trotsky.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_party_struggle"
+	texturefile = "gfx/interface/goals/RUS_party_struggle.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_opposition"
+	texturefile = "gfx/interface/goals/RUS_opposition.dds"			
+	}
+
+    SpriteType = {
+	name = "GFX_focus_RUS_gapon"
+	texturefile = "gfx/interface/goals/RUS_gapon.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_kamenev"
+	texturefile = "gfx/interface/goals/RUS_kamenev.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_white_old_guard"
+	texturefile = "gfx/interface/goals/RUS_white_old_guard.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_white_agitation"
+	texturefile = "gfx/interface/goals/RUS_white_agitation.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_white_militia"
+	texturefile = "gfx/interface/goals/RUS_white_militia.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_white_cossacks"
+	texturefile = "gfx/interface/goals/RUS_white_cossacks.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_nikolay_the_second"
+	texturefile = "gfx/interface/goals/RUS_nikolay_the_second.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_italy"
+	texturefile = "gfx/interface/goals/RUS_italy.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_america"
+	texturefile = "gfx/interface/goals/RUS_america.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_britain"
+	texturefile = "gfx/interface/goals/RUS_britain.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_with_devil"
+	texturefile = "gfx/interface/goals/RUS_with_devil.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_arms_buildup"
+	texturefile = "gfx/interface/goals/RUS_arms_buildup.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_france"
+	texturefile = "gfx/interface/goals/RUS_france.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_greece"
+	texturefile = "gfx/interface/goals/RUS_greece.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_novocherkassk"
+	texturefile = "gfx/interface/goals/RUS_novocherkassk.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_sevastopol"
+	texturefile = "gfx/interface/goals/RUS_sevastopol.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_set_up_heradquarters"
+	texturefile = "gfx/interface/goals/RUS_set_up_heradquarters.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_russian_people"
+	texturefile = "gfx/interface/goals/RUS_russian_people.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_recourse"
+	texturefile = "gfx/interface/goals/RUS_recourse.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_active_preparation"
+	texturefile = "gfx/interface/goals/RUS_active_preparation.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_white_old_guard"
+	texturefile = "gfx/interface/goals/RUS_white_old_guard.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_white_save_russia"
+	texturefile = "gfx/interface/goals/RUS_white_save_russia.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_workers_agitation"
+	texturefile = "gfx/interface/goals/RUS_workers_agitation.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_gapon_compromise"
+	texturefile = "gfx/interface/goals/RUS_compromise.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_revolution_coming"
+	texturefile = "gfx/interface/goals/RUS_revolution.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_gapon_return"
+	texturefile = "gfx/interface/goals/RUS_gapon_return.dds"			
+	}
+
+    SpriteType = {
+	name = "GFX_focus_RUS_militants_of_ramu"
+	texturefile = "gfx/interface/goals/RUS_militants_of_ramu.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_own_experience"
+	texturefile = "gfx/interface/goals/RUS_own_experience.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_heirs_of_greatness"
+	texturefile = "gfx/interface/goals/RUS_heirs_of_greatness.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_grand_dukes"
+	texturefile = "gfx/interface/goals/RUS_grand_dukes.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_church_blessing"
+	texturefile = "gfx/interface/goals/RUS_church_blessing.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_enemy_of_my_enemy"
+	texturefile = "gfx/interface/goals/RUS_enemy_of_my_enemy.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_party_terror"
+	texturefile = "gfx/interface/goals/RUS_party_terror.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_change_command_ramu"
+	texturefile = "gfx/interface/goals/RUS_change_command_ramu.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_get_up_russian_people"
+	texturefile = "gfx/interface/goals/RUS_get_up_russian_people.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_miltants_of_ramu"
+	texturefile = "gfx/interface/goals/RUS_miltants_of_ramu.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_brothers_slavs"
+	texturefile = "gfx/interface/goals/RUS_brothers_slavs.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_convene_council"
+	texturefile = "gfx/interface/goals/RUS_convene_council.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_royal_cadres"
+	texturefile = "gfx/interface/goals/RUS_royal_cadres.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_memory_kronstadt"
+	texturefile = "gfx/interface/goals/RUS_memory_kronstadt.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_naval_leaders"
+	texturefile = "gfx/interface/goals/RUS_naval_leaders.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_metropolian_mutiny"
+	texturefile = "gfx/interface/goals/RUS_metropolian_mutiny.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_RUS_false_testimony"
+	texturefile = "gfx/interface/goals/RUS_false_testimony.dds"			
+	}
+}

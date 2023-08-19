@@ -1,0 +1,74 @@
+spriteTypes={
+    SpriteType={
+		name = "GFX_RUS_leon_bronshtein"
+		texturefile = "gfx/leaders/RUS/RUS_leon_bronshtein.dds"
+    }
+    SpriteType={
+		name = "GFX_RUS_georgiy_gapon"
+		texturefile = "gfx/leaders/RUS/RUS_georgiy_gapon.dds"
+    }
+    SpriteType={
+		name = "GFX_UMR_mihail_frunze"
+		texturefile = "gfx/leaders/UMR/UMR_mihail_frunze.dds"
+    }
+    SpriteType={
+		name = "GFX_UMR_evgeniy_konovalets"
+		texturefile = "gfx/leaders/UMR/UMR_evgeniy_konovalets.dds"                  
+    }
+	SpriteType={
+		name = "GFX_RUS_сentral_сommittee"
+		texturefile = "gfx/leaders/RUS/RUS_сentral_сommittee.dds"
+    }
+	SpriteType={
+		name = "GFX_PLS_jozef_pilsudski"
+		texturefile = "gfx/leaders/PLS/PLS_jozef_pilsudski.dds"
+    }
+	SpriteType={
+		name = "GFX_idea_RUS_vyacheslav_molotov"
+		texturefile = "gfx/interface/ideas/RUS/idea_RUS_vyacheslav_molotov.dds"
+    }
+	SpriteType={
+		name = "GFX_idea_RUS_felix_dzerzhinsky"
+		texturefile = "gfx/interface/ideas/RUS/idea_RUS_felix_dzerzhinsky.dds"
+    }
+	SpriteType={
+		name = "GFX_idea_RUS_mikhail_kalinin"
+		texturefile = "gfx/interface/ideas/RUS/idea_RUS_mikhail_kalinin.dds"
+    }
+	SpriteType={
+		name = "GFX_GNE_samuel_hoare"
+		texturefile = "gfx/leaders/GNE/GNE_samuel_hoare.dds"
+    }
+	SpriteType={
+		name = "GFX_SUO_kullervo_manner"
+		texturefile = "gfx/leaders/SUO/SUO_kullervo_manner.dds"
+    }
+	SpriteType={
+		name = "GFX_AME_john_garner"
+		texturefile = "gfx/leaders/AME/AME_john_garner.dds"
+    }
+	SpriteType={
+		name = "GFX_RUS_alexander_kolchak"
+		texturefile = "gfx/leaders/RUS/RUS_alexander_kolchak.dds"
+    }
+	SpriteType={
+		name = "GFX_ITL_victor_emmanuil"
+		texturefile = "gfx/leaders/ITL/ITL_victor_emmanuil.dds"
+    }
+	SpriteType={
+		name = "GFX_RUS_semyon_budenniy_general"
+		texturefile = "gfx/leaders/RUS/RUS_semyon_budenniy.dds"
+    }
+	SpriteType={
+		name = "GFX_JAN_emperor_hirohito"
+		texturefile = "gfx/leaders/JAN/JAN_emperor_hirohito.dds"
+    }
+	SpriteType={
+		name = "GFX_FRE_albert_lebrun"
+		texturefile = "gfx/leaders/FRE/FRE_albert_lebrun.dds"
+    }
+	SpriteType={
+		name = "GFX_VAT_pius_xi"
+		texturefile = "gfx/leaders/VAT/VAT_pius_xi.dds"
+    }
+}
