@@ -1,0 +1,600 @@
+add_namespace = rus
+
+    #fourth_congress
+country_event = {
+    id = rus.1
+	title = rus.1.t
+	desc = rus.1.d
+	picture = GFX_report_event_trotsky_speech
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_fourth_congress
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.1.a
+		ai_chance = { factor = 100 }
+		trigger = {
+                   }
+			}
+		}
+	}
+}
+
+    #congress_ivent_1
+country_event = {
+    id = rus.2
+	title = rus.2.t
+	desc = rus.2.d
+	picture = GFX_report_event_trotsky_speech
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_fourth_congress
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.2.a
+		ai_chance = { factor = 100 }
+		trigger = {
+			
+		}
+	}
+}
+
+    #congress_ivent_2
+country_event = {
+    id = rus.3
+	title = rus.3.t
+	desc = rus.3.d
+	picture = GFX_report_event_trotsky_speech
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_fourth_congress
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.3.a
+		ai_chance = { factor = 100 }
+		trigger = {
+                    }
+			}
+		}
+	}
+}
+
+    #congress_ivent_2
+country_event = {
+    id = rus.3
+	title = rus.3.t
+	desc = rus.3.d
+	picture = GFX_report_event_world_revolution
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_fourth_congress
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.3.a
+		ai_chance = { factor = 100 }
+		trigger = {
+		}
+		RUS = { add_war_support = 0.1 }
+	}
+}
+
+    #congress_ivent_3
+country_event = {
+    id = rus.4
+	title = rus.4.t
+	desc = rus.4.d
+	picture = GFX_report_event_trotsky_speech
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_fourth_congress
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.4.a
+		ai_chance = { factor = 100 }
+		trigger = {
+                   }
+		    }
+		}
+	}
+}
+    #congress_ivent_4
+country_event = {
+    id = rus.5
+	title = rus.5.t
+	desc = rus.5.d
+	picture = GFX_report_event_leningrad_terract
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_leningrad_agreements
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.5.a
+		load_focus_tree = russia_focus
+		add_political_power = - 10
+		add_stability = - 0.5
+		ai_chance = { factor = 100 }
+		trigger = {
+		    
+		}
+	}
+}
+    #congress_ivent_6
+country_event = {
+    id = rus.6
+	title = rus.6.t
+	desc = rus.6.d
+	picture = GFX_report_event_trotsky_speech
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_fourth_congress
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.4.a
+		ai_chance = { factor = 100 }
+		trigger = {
+                   }
+		    }
+		}
+	}
+}
+    # meeting of RAMU
+country_event = {
+    id = rus.7
+	title = rus.7.t
+	desc = rus.7.d
+	picture = GFX_report_event_meeting_ramu
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.7.a
+		ai_chance = { factor = 100 }
+		trigger = {
+		    
+		}
+	}
+}
+    # Old Guard - White army
+country_event = {
+    id = rus.8
+	title = rus.8.t
+	desc = rus.8.d
+	picture = GFX_report_event_white_emigration
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.8.a
+		ai_chance = { factor = 100 }
+		trigger = {
+		    
+		}
+	}
+}
+    #kill_trotsky
+country_event = {
+    id = rus.9
+	title = rus.9.t
+	desc = rus.9.d
+	picture = GFX_report_event_leningrad_terract
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_kill_trotsky
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.9.a
+		kill_country_leader = yes
+		create_country_leader = {
+	        name=RUS_сentral_сommittee
+	        desc=RUS_сentral_сommittee_desc
+	        picture = GFX_RUS_сentral_сommittee
+	        expire = "1965.1.1"
+	        ideology = classical_trotskism
+	        traits = {
+	        } 
+        }
+		hidden_effect = { news_event = { id = news.1 } }
+		ai_chance = { factor = 100 }
+		trigger = {
+		    
+		}
+	}
+}
+country_event = {
+    id = rus.10
+	title = rus.10.t
+	desc = rus.10.d
+	picture = GFX_report_event_gapon
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_gapon
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.10.a
+		add_popularity = {
+            ideology = trotskism
+            popularity = 0.02
+        }
+		ai_chance = { factor = 100 }
+		trigger = {
+		    
+		}
+	}
+}
+
+country_event = {
+    id = rus.11
+	title = rus.11.t
+	desc = rus.11.d
+	picture = GFX_report_event_gapon_meeting
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_gapon
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.11.a
+		custom_effect_tooltip = gapon_compromise
+        set_country_flag = gapon_compromise
+		ai_chance = { factor = 50 }
+		trigger = {
+		    
+		}
+	}
+	option = {
+	    name = rus.11.b
+		custom_effect_tooltip = gapon_revolution
+        set_country_flag = gapon_revolution
+		ai_chance = { factor = 50 }
+		trigger = {
+		    
+		}
+	}
+}
+
+country_event = {
+    id = rus.12
+	title = rus.12.t
+	desc = rus.12.d
+	picture = GFX_report_event_gapon_return
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+		has_completed_focus = RUS_gapon
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.12.a
+		RUS = { country_event = rus.11 }
+		ai_chance = { factor = 100 }
+		trigger = {
+		    
+		}
+	}
+}
+
+country_event = {
+    id = rus.13
+	title = rus.13.t
+	desc = rus.13.d
+	picture = GFX_report_event_suomi_problem
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.13.a
+		ai_chance = { factor = 100 }
+		trigger = {
+		    
+		}
+	}
+}
+
+  #Kolchak starts civil war
+country_event = {
+    id = rus.14
+	title = rus.14.t
+	desc = rus.14.d
+	picture = GFX_report_event_suomi_problem
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.14.a
+		ai_chance = { factor = 100 }
+	    start_civil_war = {
+			ruling_party = authoritarianism
+			ideology = trotskism
+			size = 0.5
+			capital = 195
+			states = { 195 146 208 209 244 264 216 215 213 879 214 263 210 242 243 205 223 222 224 220 219 247 248 253 246 351 825 581 399 398 573 252 256 400 249 651 582 653 572402 587 584 831 832 823 830 397 262 880 583 881 579 824 516 404 732 577 580 254 405 742 585 402 813 191 408 409 560 657 561 655 833 }
+		}
+		set_popularities = {
+			authoritarianism = 42
+			liberalism = 18
+			conservatism = 27
+			nationalism = 13
+		}
+        news_event = { hours = 6 id = news.3 }
+		
+		load_oob = "RUS_civil_war_kolchak" 
+		set_party_name = {
+		    ideology = authoritarianism
+			long_name = RUS_authoritarianism_kolchak_long
+			name = RUS_authoritarianism_party_kolchak
+		}
+		create_country_leader = {
+		    name = RUS_alexander_kolchak
+			desc = RUS_alexander_kolchak_desc
+			picture = GFX_RUS_alexander_kolchak
+			expire = "2077.1.1"
+			ideology = military_junta
+			traits = {
+			}
+		}
+		random_other_country = {
+			limit = {
+				original_tag = RUS
+				has_government = trotskism
+			}
+			set_country_flag = RUS_civil_war_communist
+			set_cosmetic_tag = PSU_civil_war
+			dismantle_faction = yes
+		}
+		set_cosmetic_tag = RUS_save_russia
+		set_capital = { state = 137 }
+		dismantle_faction = yes
+		hidden_effect = {
+		    RUS = { 
+			    country_event = { 
+			        id = rus.16 
+					days = 10
+				}
+			}
+		}
+		trigger = {
+		    RUS = { has_completed_focus = RUS_sevastopol }
+		}
+	}
+	
+	option = {
+	    name = rus.14.a
+		ai_chance = { factor = 100 }
+		set_capital = 55
+	    start_civil_war = {
+			ruling_party = authoritarianism
+			ideology = trotskism
+			size = 0.5
+			capital = 64
+			states = { 64 61 52 53 54 60 65 66 67 68 62 63 5 }
+		}
+		load_oob = "RUS_civil_war_kolchak" 
+		set_party_name = {
+		    ideology = authoritarianism
+			long_name = RUS_authoritarianism_kolchak_long
+			name = RUS_authoritarianism_party_kolchak
+		}
+		random_other_country = {
+			limit = {
+				original_tag = RUS
+				has_government = trotskism
+			}
+			set_country_flag = RUS_civil_war_communist
+		}
+		hidden_effect = {
+		    RUS = { 
+			    country_event = { 
+			        id = rus.16 
+					days = 10
+				}
+			}
+		}
+		trigger = {
+		    RUS = { has_completed_focus = RUS_novocherkassk }
+            
+		}
+    }
+}
+
+  #Suomi problem
+country_event = {
+    id = rus.15
+	title = rus.15.t
+	desc = rus.15.d
+	picture = GFX_report_event_suomi_problem
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.15.a
+		ai_chance = { factor = 100 }
+		add_political_power = -200
+		trigger = {
+		    
+		}
+	}
+}
+country_event = {
+    id = rus.16
+	title = rus.16.t
+	desc = rus.16.d
+	picture = GFX_report_event_suomi_problem
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = RUS
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = rus.16.a
+		ai_chance = { factor = 100 }
+		BLS = {
+		    set_state_owner = 206
+			set_state_owner = 204
+			set_state_owner = 207
+			set_state_owner = 241
+			set_state_owner = 95
+			set_state_owner = 94
+			set_state_owner = 194
+			set_state_owner = 96
+			set_state_owner = 784
+			set_state_owner = 909
+			set_state_controller = 206
+			set_state_controller = 204
+			set_state_controller = 207
+			set_state_controller = 241
+			set_state_controller = 95
+			set_state_controller = 94
+			set_state_controller = 194
+			set_state_controller = 96
+			set_state_controller = 784
+			set_state_controller = 909
+			load_oob = "BLS_uprising"
+		}
+		RUS = {
+		    declare_war_on = {
+			    target = BLS
+				type = annex_everything
+			}
+		}
+		PSU = {
+		    declare_war_on = {
+			    target = BLS
+				type = annex_everything
+			}
+		}
+		trigger = {
+		    
+		}
+	}
+}

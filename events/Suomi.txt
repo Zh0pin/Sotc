@@ -1,0 +1,48 @@
+add_namespace = suo
+
+    #suomi freedom
+country_event = {
+    id = suo.1
+	title = suo.1.t
+	desc = suo.1.d
+	picture = GFX_report_event_suomi_independence
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		tag = SUO
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = suo.1.a
+		drop_cosmetic_tag = SUO_trotskism_RUS
+		RUS = { country_event = rus.13 }
+		RUS = { end_puppet = SUO }
+		leave_faction = yes
+		ai_chance = { factor = 70 }
+		trigger = {
+		}
+	}
+	option = {
+	    name = suo.1.b
+		drop_cosmetic_tag = SUO_trotskism_RUS
+		RUS = { country_event = rus.13 }
+		RUS = { end_puppet = SUO }
+		leave_faction = yes
+		set_politics = {
+	        ruling_party = socialism
+            elections_allowed = no
+            last_election = "1934.2.1"
+            election_frequency = 48
+        }
+		ai_chance = { factor = 30 }
+		trigger = {
+		}
+	}
+}
+
+ 

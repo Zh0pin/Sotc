@@ -1,0 +1,28 @@
+add_namespace = pls
+
+    #fourth_congress
+country_event = {
+    id = pls.1
+	title = pls.1.t
+	desc = pls.1.d
+	picture = GFX_report_event_trotsky_speech
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = PLS
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = pls.1.a
+		ai_chance = { factor = 100 }
+		trigger = {
+                   }
+			}
+		}
+	}
+}

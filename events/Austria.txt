@@ -1,0 +1,62 @@
+add_namespace = avs
+
+country_event = {
+    id = avs.1
+	title = avs.1.t
+	desc = avs.1.d
+	picture = GFX_report_event_february_uprising
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = AVS   
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = avs.1.a
+		ai_chance = { factor = 55 }
+	    start_civil_war = {
+			ruling_party = liberalism
+			ideology = authoritarianism
+			size = 0.45
+			capital = 4
+			states = { 4 }
+	    } 
+		random_other_country = {
+			limit = {
+				original_tag = AVS
+				has_government = authoritarianism
+			}
+			set_country_flag = AVS_civil_war_authoritarianism
+			set_cosmetic_tag = ARU_civil_war
+		}
+        news_event = news.5
+	}
+	
+	option = {
+	    name = avs.1.b
+		ai_chance = { factor = 45 }
+		set_capital = { state = 152 }
+	    start_civil_war = {
+			ruling_party = authoritarianism
+			ideology = liberalism
+			size = 0.45
+			capital = 152
+			states = { 152 153 848 853 102 }
+	    } 
+		random_other_country = {
+			limit = {
+				original_tag = AVS
+				has_government = liberalism
+			}
+			set_cosmetic_tag = AVS_civil_war
+		}
+		set_country_flag = AVS_civil_war_authoritarianism
+		set_cosmetic_tag = ARU_civil_war
+        news_event = news.5
+	}
+}

@@ -1,0 +1,71 @@
+add_namespace = umr
+
+country_event = {
+    id = umr.1
+	title = umr.1.t
+	desc = umr.1.d
+	picture = GFX_report_event_suomi_problem
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+	    tag = UMR
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = {
+	    name = umr.1.a
+		ai_chance = { factor = 60 }
+		RUS = { end_puppet = UMR }
+		RUS = { country_event = rus.15 }
+		leave_faction = yes
+		drop_cosmetic_tag = UMR_trotskism_RUS
+	    start_civil_war = {
+			ruling_party = trotskism
+			ideology = nationalism
+			size = 0.4
+			capital = 93
+			states = { 93 }
+	    } 
+		random_other_country = {
+			limit = {
+				original_tag = UMR
+				has_government = trotskism
+			}
+			set_country_flag = UMR_civil_war_nationalism
+			set_cosmetic_tag = OUN_civil_war
+		}
+		set_cosmetic_tag = UMR_civil_war
+        news_event = news.2 
+	}
+	
+	option = {
+	    name = umr.1.b
+		ai_chance = { factor = 40 }
+		set_capital = { state = 93 }
+		RUS = { country_event = rus.15 }
+		RUS = { end_puppet = UMR }
+		leave_faction = yes
+		drop_cosmetic_tag = UMR_trotskism_RUS
+	    start_civil_war = {
+			ruling_party = nationalism
+			ideology = trotskism
+			size = 0.4
+			capital = 91
+			states = { 91 89 }
+	    } 
+		random_other_country = {
+			limit = {
+				original_tag = UMR
+				has_government = trotskism
+			}
+			set_cosmetic_tag = UMR_civil_war
+		}
+		set_cosmetic_tag = OUN_civil_war
+        news_event = news.2 
+		
+	}
+}

@@ -1,0 +1,297 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+ #Trotsky is dead
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1.a
+		trigger = {
+		 }
+	}
+}
+ #Ukrainian Civil War
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_005
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = ukrainian_civil_war
+	}
+	
+	option = {
+		name = news.2.a
+		trigger = {
+		}
+	}
+}
+#Kolchak has started Second Russian Civil War
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_004
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.3.a
+		trigger = {
+		}
+	}
+}
+
+#Konovalets wins in civil war
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_007
+	
+	major = yes
+	
+	trigger = {
+	    has_global_flag = ukrainian_civil_war
+		NOT = { has_global_flag = ucw_over }
+		UMR = { has_civil_war = no }
+		any_other_country = {
+			original_tag = UMR
+			has_government = nationalism
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = UMR }
+				has_government = nationalism
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = konovalets_victory
+		set_global_flag = ucw_over
+	}
+	
+	option = {
+		name = news.4.a
+		trigger = {
+		}
+	}
+}
+
+#February uprising in Austria
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news_event_008
+	
+	major = yes
+	
+	mean_time_to_happen = {
+	    days = 2
+	}
+	
+	immediate = {
+	    set_global_flag = austrian_civil_war
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.5.a
+		trigger = {
+		}
+	}
+}
+
+#Authoritarianism wins in Austria
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_news_event_009
+	
+	major = yes
+	
+	trigger = {
+	    has_global_flag = austrian_civil_war
+		NOT = { has_global_flag = austrian_civil_war_over }
+		AVS = { has_civil_war = no }
+		any_other_country = {
+			original_tag = AVS
+			has_government = authoritarianism
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = AVS }
+				has_government = authoritarianism
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+	    days = 2
+	}
+	
+	immediate = {
+	    set_global_flag = austrian_civil_war_over
+	}
+	
+	option = {
+		name = news.6.a
+		trigger = {
+		    NOT = { original_tag = AVS }
+		    OR = {
+			    has_government = socialism
+				has_government = trotskism
+				has_government = liberalism
+				has_government = anarchism
+			}
+		}
+	}
+	option = {
+		name = news.6.b
+		trigger = {
+		    NOT = { original_tag = AVS }
+		    OR = {
+			    has_government = conservatism
+				has_government = nationalism
+				has_government = authoritarianism
+			}
+		}
+	}
+	option = {
+		name = news.6.c
+		trigger = {
+		    original_tag = AVS
+		}
+	}
+}
+#liberalism wins in Austria
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_news_event_010
+	
+	major = yes
+	
+	trigger = {
+	    has_global_flag = austrian_civil_war
+		NOT = { has_global_flag = austrian_civil_war_over }
+		AVS = { has_civil_war = no }
+		any_other_country = {
+			original_tag = AVS
+			has_government = liberalism
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = AVS }
+				has_government = liberalism
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+	    days = 2
+	}
+	
+	immediate = {
+	    set_global_flag = austrian_civil_war_over
+	}
+	
+	option = {
+		name = news.7.a
+		trigger = {
+		    NOT = { original_tag = AVS }
+		    OR = {
+			    has_government = socialism
+				has_government = trotskism
+				has_government = liberalism
+				has_government = anarchism
+			}
+		}
+	}
+	option = {
+		name = news.7.b
+		trigger = {
+		    NOT = { original_tag = AVS }
+		    OR = {
+			    has_government = conservatism
+				has_government = nationalism
+				has_government = authoritarianism
+			}
+		}
+	}
+	option = {
+		name = news.7.c
+		trigger = {
+		    original_tag = AVS
+		}
+	}
+}
+
+#Frunze wins in civil war
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_011
+	
+	major = yes
+	
+	trigger = {
+	    has_global_flag = ukrainian_civil_war
+		NOT = { has_global_flag = ucw_over }
+		UMR = { has_civil_war = no }
+		any_other_country = {
+			original_tag = UMR
+			has_government = trotskism
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = UMR }
+				has_government = trotskism
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = frunze_victory
+		set_global_flag = ucw_over
+	}
+	
+	option = {
+		name = news.8.a
+		trigger = {
+		}
+	}
+}
+
