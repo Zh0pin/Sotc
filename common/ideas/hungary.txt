@@ -1,0 +1,20 @@
+ideas = {
+
+    country = {
+
+        VUN_bel_tr = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_idea_VUN_bel_tr
+
+            modifier = {
+				stability_factor = -0.25
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+ideas = {
+
+    country = {
+
+        WEI_reichstag = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_WEI_reichstag
+
+            modifier = {
+            stability_factor = -0.05
+                 }
+               }
+               
+        WEI_airship = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_WEI_airship
+
+            modifier = {
+            consumer_goods_factor = -0.05
+            trade_opinion_factor = 0.25
+            production_speed_industrial_complex_factor = 0.10
+            production_speed_infrastructure_factor = 0.10
+            production_speed_arms_factory_factor = -0.05
+                 }
+               }
+               
+        WEI_cabinet = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_WEI_reichstag
+
+            modifier = {
+            political_advisor_cost_factor = 0.50
+            political_power_factor = -0.50
+                 }
+               }
+               
+        WEI_reichmarka = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_WEI_reichstag
+
+            modifier = {
+            consumer_goods_factor = 0.15
+            production_speed_buildings_factor = 0.05
+                 }
+               }
+
+               
+        WEI_army = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_WEI_reichstag
+
+            modifier = {
+            conscription = -0.005
+            production_speed_arms_factory_factor = -0.5
+                 }
+               }
+               
+               
+        WEI_nation = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_WEI_reichstag
+
+            modifier = {
+            stability_factor = -0.15
+            war_support_factor = -0.30
+                 }
+               }
+               
+               
+        WEI_depression = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_WEI_reichstag
+
+            modifier = {
+            stability_factor = -0.05
+            consumer_goods_factor = 0.075
+            production_speed_buildings_factor = -0.15
+                 }
+               }
+               
+               
+               
+    }
+}

@@ -1,0 +1,32 @@
+characters={
+	UMR_mihail_frunze={
+		name=UMR_mihail_frunze
+		portraits={
+			civilian={
+				large=GFX_UMR_mihail_frunze
+			}
+		}
+		country_leader={
+			ideology= war_communism
+			traits={ tamer_of_rebellion  hero_of_civil_war }
+			expire="2078.1.1.1"
+			id=-1
+
+          }
+	}
+	UMR_evgeniy_konovalets={
+		name=UMR_evgeniy_konovalets
+		portraits={
+			civilian={
+				large=GFX_UMR_evgeniy_konovalets
+			}
+		}
+		country_leader={
+			ideology= nationalism_ideology
+			traits={ face_of_ukranian_nationalism }
+			expire="2078.1.1.1"
+			id=-1
+
+		}
+	}
+}

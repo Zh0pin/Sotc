@@ -1,0 +1,17 @@
+characters={
+	PLS_jozef_pilsudski={
+		name=PLS_jozef_pilsudski
+		portraits={
+			civilian={
+				large=GFX_PLS_jozef_pilsudski
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democracy
+			traits={ tyrant_of_democracy }
+			expire="2078.1.1.1"
+			id=-1
+
+        }
+	}
+}

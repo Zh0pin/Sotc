@@ -1,0 +1,19 @@
+ideas = {
+
+    country = {
+
+        league_of_nations_member = {
+
+            removal_cost = -1
+    
+            allowed = {
+                
+            }
+
+            picture = GFX_idea_league_of_nations_member
+
+            modifier = {
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+characters={
+	RUS_leon_bronshtein={
+		name=RUS_leon_bronshtein
+		portraits={
+			civilian={
+				large=GFX_RUS_leon_bronshtein
+			}
+		}
+		country_leader={
+			ideology= classical_trotskism
+			desc = "POLITICS_RUS_LEON_BRONSHTEIN_DESC"
+			traits={ trotsky  hero_of_civil_war }
+			expire="2078.1.1.1"
+			id=-1
+
+          }
+	}
+	RUS_georgiy_gapon={
+		name=RUS_georgiy_gapon
+		portraits={
+			civilian={
+				large=GFX_RUS_georgiy_gapon
+			}
+		}
+		country_leader={
+			ideology= utopian_socialism
+			traits={  }
+			expire="2078.1.1.1"
+			id=-1
+
+		}
+	}
+	RUS_vyacheslav_molotov = {
+		name = RUS_vyacheslav_molotov
+		portraits = {
+			army = {
+				small = "GFX_idea_RUS_vyacheslav_molotov"
+			}
+		}
+		allowed_civil_war = {
+			has_government = trotskism
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_vyacheslav_molotov
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+			    NOT = {
+				    has_completed_focus = RUS_opposition
+				}
+			}
+			traits = {
+				peoples_comissar_of_foreign_affairs
+			}
+		}
+	}
+	RUS_mikhail_kalinin = {
+		name = RUS_mikhail_kalinin
+		portraits = {
+			army = {
+				small = "GFX_idea_RUS_mikhail_kalinin"
+			}
+		}
+		allowed_civil_war = {
+			has_government = trotskism
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_mikhail_kalinin
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+			    NOT = {
+				    has_completed_focus = RUS_opposition
+				}
+			}
+			traits = {
+				peoples_elder_of_the_pssr
+			}
+		}
+	}
+	RUS_felix_dzerzhinsky = {
+		name = RUS_felix_dzerzhinsky
+		portraits = {
+			army = {
+				small = "GFX_idea_RUS_felix_dzerzhinsky"
+			}
+		}
+		allowed_civil_war = {
+			has_government = trotskism
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_felix_dzerzhinsky
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+			    NOT = {
+				    has_completed_focus = RUS_opposition
+				}
+			}
+			traits = {
+				peoples_comissar_of_internal_affairs
+                        }
+                 }
+	    }
+	RUS_semyon_budenniy_general = {
+		name=RUS_semyon_budenniy_general
+		portraits= {
+			army= {
+				large="GFX_RUS_semyon_budenniy_general"
+				small="GFX_idea_HUN_geza_lakatos"
+			}
+		}
+		field_marshal= {
+               traits= { war_hero old_guard cavalry_leader media_personality }
+			skill=3
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2                                
+			legacy_id= -1
+                    }
+			}
+		}
+	}
+}

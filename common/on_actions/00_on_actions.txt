@@ -1,0 +1,181 @@
+on_actions = {
+    #Austrian civil wat
+    on_startup = {
+		effect = {
+			AVS = {
+			    country_event = { 
+				    id = avs.1
+				    days = 36
+				}
+			}
+		}
+	}
+	#British Iraq
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = IAQ
+						is_subject_of = GNE
+					}
+				}
+				set_cosmetic_tag = IAQ_conservatism_GNE
+			}
+		}
+	}
+	#British South Africa
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = SAT
+						is_subject_of = GNE
+					}
+				}
+				set_cosmetic_tag = SAT_conservatism_GNE
+			}
+		}
+	}
+	#British Raj
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = IND
+						is_subject_of = GNE
+					}
+				}
+				set_cosmetic_tag = IND_conservatism_GNE
+			}
+		}
+	}
+	#British Palestine
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = PLE
+						is_subject_of = GNE
+					}
+				}
+				set_cosmetic_tag = PLE_GNE_conservatism
+			}
+		}
+	}
+	#British Egypt
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = EGK
+						is_subject_of = GNE
+					}
+				}
+				set_cosmetic_tag = EGK_conservatism_GNE
+			}
+		}
+	}
+	#French Saarland
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = SAR
+						is_subject_of = FRE
+					}
+				}
+				set_cosmetic_tag = SAR_conservatism_FRE
+			}
+		}
+	}
+	#British Iraq
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					NOT = { 
+						TAG = IAQ
+						is_subject_of = GNE
+					}
+				}
+				drop_cosmetic_tag = IAQ_conservatism_GNE
+			}
+		}
+	}
+	#British South Africa
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					NOT = { 
+						TAG = IAQ
+						is_subject_of = GNE
+					}
+				}
+				drop_cosmetic_tag = IAQ_conservatism_GNE
+			}
+		}
+	}
+	#British Raj
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					NOT = { 
+						TAG = IND
+						is_subject_of = GNE
+					}
+				}
+				drop_cosmetic_tag = IND_conservatism_GNE
+			}
+		}
+	}
+	#British Palestine
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					NOT = { 
+						TAG = PLE
+						is_subject_of = GNE
+					}
+				}
+				drop_cosmetic_tag = PLE_GNE_conservatism
+			}
+		}
+	}
+	#British Egypt
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					NOT = { 
+						TAG = EGK
+						is_subject_of = GNE
+					}
+				}
+				drop_cosmetic_tag = EGK_conservatism_GNE
+			}
+		}
+	}
+	#French Saarland
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					NOT = { 
+						TAG = SAR
+						is_subject_of = FRE
+					}
+				}
+				drop_cosmetic_tag = SAR_conservatism_FRE
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters={
+	AME_john_garner={
+		name=AME_john_garner
+		portraits={
+			civilian={
+				large=GFX_AME_john_garner
+			}
+		}
+		country_leader={
+			ideology= social_democracy
+			traits={ }
+			expire="2078.1.1.1"
+			id=-1
+
+        }
+	}
+}

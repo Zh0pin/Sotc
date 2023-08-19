@@ -1,0 +1,17 @@
+characters={
+	JAN_emperor_hirohito={
+		name=JAN_emperor_hirohito
+		portraits={
+			civilian={
+				large=GFX_JAN_emperor_hirohito
+			}
+		}
+		country_leader={
+			ideology= absolutely_monarchy
+			traits={  }
+			expire="2078.1.1.1"
+			id=-1
+
+        }
+	}
+}

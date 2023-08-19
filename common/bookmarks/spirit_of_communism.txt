@@ -1,0 +1,126 @@
+bookmarks = {
+	bookmark = {
+		name = "SPIRIT_OF_COMMUNISM_NAME"
+		desc = "SPIRIT_OF_COMMUNISM_DESC"
+		date = 1934.1.1.12
+		picture = "GFX_select_date_1934"
+		default_country = "---"
+		default = yes
+		
+		"RUS" = {
+			history = "RUS_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = trotskism
+			ideas={
+                RUS_inter
+				RUS_rev
+				RUS_party
+			}
+			focuses = {
+				RUS_fourth_congress
+				RUS_integration_question
+				RUS_leningrad_agreements
+			}
+		}
+		"GNE" = {
+			history = "GNE_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = conservatism
+			ideas={
+                GNE_mon_crisis
+				GNE_rule_brit
+			}
+			focuses = {
+				
+			}
+		}
+		"WEI" = {
+			history = "WEI_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = liberalism
+			ideas={
+			
+			}
+			focuses = {
+				
+			}
+		}
+		"FRE" = {
+			history = "FRE_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = liberalism
+			ideas={
+			
+			}
+			focuses = {
+				
+			}
+		}
+		"ITL" = {
+			history = "ITL_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = authoritarianism
+			ideas={
+			
+			}
+			focuses = {
+				
+			}
+		}
+		"AME" = {
+			history = "AME_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = liberalism
+			ideas={
+			
+			}
+			focuses = {
+				
+			}
+		}
+		"JAN" = {
+			history = "JAN_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = authoritarianism
+			ideas={
+			
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"---"={
+			history = "OTHER_SPIRIT_OF_COMMUNISM_DESC"
+		}
+		
+		
+		#minors###
+		"PLS" = {
+		    minor = yes
+			history = "PLS_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = authoritarianism
+			ideas={
+                RUS_inter
+				RUS_rev
+			}
+			focuses = {
+				RUS_fourth_congress
+				RUS_integration_question
+				RUS_leningrad_agreements
+			}
+		}
+		
+		"GRC" = {
+		    minor = yes
+			history = "GRC_SPIRIT_OF_COMMUNISM_DESC"
+			ideology = authoritarianism
+			ideas={
+                RUS_inter
+				RUS_rev
+			}
+			focuses = {
+				RUS_fourth_congress
+				RUS_integration_question
+				RUS_leningrad_agreements
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

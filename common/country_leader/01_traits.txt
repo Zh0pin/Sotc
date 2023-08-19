@@ -1,0 +1,85 @@
+leader_traits = {
+
+	trotsky = {
+		random = no
+		political_power_gain = -0.05
+        surrender_limit = 0.15
+        war_support_factor = 0.05
+        party_popularity_stability_factor = 0.1
+        trotskism_drift = 0.03
+        generate_wargoal_tension = -0.1
+	}
+
+    tamer_of_rebellion = {
+		random = no
+        required_garrison_factor = -0.4
+        resistance_activity = -0.2
+        enemy_operative_capture_chance_factor = 0.5
+        trotskism_drift = 0.05
+        surrender_limit = -0.1
+        war_support_factor = -0.15
+        opinion_gain_monthly_factor = -0.2
+        party_popularity_stability_factor = -0.15
+        monthly_population = -0.5
+        autonomy_gain = -0.5
+   
+	}
+
+    hero_of_civil_war = {
+		random = no
+        war_support_factor = 0.05
+        war_stability_factor = 0.05
+        experience_gain_army_factor = 0.05
+    }
+
+    face_of_ukranian_nationalism = {
+		random = no
+        war_support_factor = 0.05
+        nationalism_drift = 0.05
+		surrender_limit = 0.5
+	}
+	
+	tyrant_of_democracy = {
+		random = no
+        war_support_factor = -0.05
+        war_stability_factor = -0.05
+        experience_gain_army_factor = 0.05
+    }
+
+    peoples_comissar_of_internal_affairs = {
+	    random = no
+	    enemy_operative_capture_chance_factor = 0.25
+		operative_slot = 1
+		required_garrison_factor = -0.15
+	}
+	
+	peoples_comissar_of_foreign_affairs = {
+	    random = no
+		trade_opinion_factor = 0.10
+		justify_war_goal_time = -0.1
+        political_power_gain = 0.05
+	}
+	
+	peoples_elder_of_the_pssr = {
+	    random = no
+	    stability_factor = 0.1
+		political_power_gain = 0.05
+		trotskism_drift = 0.01
+		party_popularity_stability_factor = 0.5
+    }
+	
+	victorious_king = {
+	    random = no
+        war_support_factor = 0.05
+        surrender_limit = 0.2
+        authoritarianism_drift = 0.01
+	}
+	
+	pope = {
+	    random = no
+        war_support_factor = -0.2
+		stability_factor = 0.2
+        surrender_limit = 0.3
+        authoritarianism_drift = 0.01
+	}
+}

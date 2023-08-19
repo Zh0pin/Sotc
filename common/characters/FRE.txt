@@ -1,0 +1,17 @@
+characters={
+	FRE_albert_lebrun={
+		name=FRE_albert_lebrun
+		desc = ALBERT_LEBRUN_DESCRIPTION
+		portraits={
+			civilian={
+				large=GFX_FRE_albert_lebrun
+			}
+		}
+		country_leader={
+			ideology= centrism
+			traits={ }
+			expire="2078.1.1.1"
+			id=-1
+        }
+	}
+}

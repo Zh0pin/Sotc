@@ -1,0 +1,1261 @@
+focus_tree = {
+	id = russia_starter_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	
+	default = no
+
+    focus = { 
+	    id = RUS_fourth_congress
+		icon = GFX_focus_RUS_fourth_congress
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		}
+		x = 4
+		y = 0
+        cost = 1
+        completion_reward = {
+		    RUS = { country_event = rus.1 }	
+		}
+	}
+	focus = {
+	    id = RUS_integration_question
+		icon = GFX_focus_RUS_integration_question
+		prerequisite = { focus = RUS_fourth_congress }
+		avaiable = {
+		    is_puppet = no
+	    }
+	    bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 3
+		y = 1
+		cost = 1
+		completion_reward = {
+		    RUS = { country_event = rus.2 }
+		}
+	}
+	focus = {
+	    id = RUS_world_revolution
+		icon = GFX_focus_RUS_world_revolution
+		prerequisite = { focus = RUS_fourth_congress }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 5
+		y = 1
+		cost = 1
+		completion_reward = {
+		    RUS = { country_event = rus.3 }
+		}
+	}
+	focus = {
+	    id = RUS_united_army
+		icon = GFX_focus_RUS_united_army
+		prerequisite = { focus = RUS_integration_question }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 3
+		y = 2
+		cost = 1
+		completion_reward = {
+		    RUS = { country_event = rus.4 }
+			add_war_support = 0.1
+			army_exIRAience = 10
+		}
+	}
+	focus = {
+	    id = RUS_helping_comrades
+		icon = GFX_focus_RUS_helping_comrades
+		prerequisite = { focus = RUS_world_revolution }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 5
+		y = 2
+		cost = 1
+          completion_reward = {
+              RUS = { country_event = rus.4 }
+		}
+	}
+	focus = {
+	    id = RUS_leningrad_agreements
+		icon = GFX_focus_RUS_leningrad_agreements
+		prerequisite = { focus = RUS_helping_comrades }
+          prerequisite = { focus = RUS_united_army }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 4
+		y = 3
+		cost = 1
+		completion_reward = {
+		    RUS = { country_event = rus.5 }
+		}
+	}
+	focus = {
+	    id = RUS_romanian_proletarias
+		icon = GFX_focus_RUS_romanian_proletarias
+		prerequisite = { focus = RUS_leningrad_agreements }		
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 4
+		y = 4
+		cost = 1
+		completion_reward = {
+		    RUS = { country_event = rus.7 }
+		}
+	}
+	focus = {
+	    id = RUS_finish_congress
+		icon = GFX_focus_RUS_finish_congress
+		prerequisite = { focus = RUS_romanian_proletarias }		
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 4
+		y = 5
+		cost = 1
+		completion_reward = {
+		    RUS = { country_event = rus.8 }
+		}
+	}
+}
+focus_tree = {
+    id = russia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	
+	default = no
+	
+	focus = {
+	    id = RUS_kill_trotsky
+		icon = GFX_focus_RUS_kill_trotsky
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 20
+		y = 0
+		cost = 2
+		completion_reward = {
+		    RUS = { country_event = rus.9 }
+			SUO = { country_event = suo.1 }
+			UMR = { country_event = umr.1 }
+		}
+	}
+	focus = {
+	    id = RUS_party_struggle
+		icon = GFX_focus_RUS_party_struggle
+		prerequisite = { focus = RUS_kill_trotsky }
+        mutually_exclusive = { focus = RUS_opposition }		
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 10
+		y = 1
+		cost = 2
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_opposition
+		icon = GFX_focus_RUS_opposition
+		prerequisite = { focus = RUS_kill_trotsky }	
+		mutually_exclusive = { focus = RUS_party_struggle }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 30
+		y = 1
+		cost = 2
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_gapon
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_opposition }	
+		mutually_exclusive = { focus = focus_RUS_old_guard }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 25
+		y = 2
+		cost = 5
+		completion_reward = {
+		    RUS = { country_event = rus.10 }
+		}
+	}
+	focus = {
+	    id = RUS_gapon_return
+		icon = GFX_focus_RUS_gapon_return
+		prerequisite = { focus = RUS_gapon }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 25
+		y = 3
+		cost = 5
+		completion_reward = {
+		    RUS = { country_event = rus.12 }
+		}
+	}
+	focus = {
+	    id = RUS_revolution_coming
+		icon = GFX_focus_RUS_revolution_coming
+		prerequisite = { focus = RUS_gapon_return }	
+		avaiable = { has_country_flag = gapon_revolution }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		mutually_exclusive = { focus = RUS_gapon_compromise }
+		x = 27
+		y = 4
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_gapon_compromise
+		icon = GFX_focus_RUS_gapon_compromise
+		prerequisite = { focus = RUS_gapon_return }	
+		avaiable = { has_country_flag = gapon_compromise }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		mutually_exclusive = { focus = RUS_revolution_coming }
+		x = 23
+		y = 4
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_workers_agitation
+		icon = GFX_focus_RUS_workers_agitation
+		prerequisite = { focus = RUS_revolution_coming }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 26
+		y = 5
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_finnish_steamer
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_revolution_coming }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 28
+		y = 5
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_christ_appearance
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_gapon_compromise }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		mutually_exclusive = { focus = RUS_struve_initiative }
+		x = 24
+		y = 5
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_struve_initiative
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_gapon_compromise }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		mutually_exclusive = { focus = RUS_christ_appearance }
+		x = 22
+		y = 5
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_holy_wednesday
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_christ_appearance }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 24
+		y = 6
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_storming_factories
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_finnish_steamer focus = RUS_workers_agitation }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 28
+		y = 6
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_march_the_palace
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_storming_factories }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 28
+		y = 7
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_call_to_the_people
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_march_the_palace focus = RUS_holy_wednesday }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 26
+		y = 8
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_workers_militia
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_call_to_the_people }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 25
+		y = 9
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_appeal_immigrants
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_call_to_the_people }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 27
+		y = 9
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_dark_days_over
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_appeal_immigrants }	
+		prerequisite = { focus = RUS_workers_militia }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 26
+		y = 10
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_gather_dissatisfied
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_struve_initiative }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 22
+		y = 6
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_unhappy_soldiers
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_gather_dissatisfied }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 19
+		y = 7
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_bribing_officers
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_gather_dissatisfied }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 21
+		y = 7
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_provocateurs_system
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_gather_dissatisfied }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 23
+		y = 7
+		cost = 5
+		completion_reward = {
+		   
+		}
+	}
+	focus = {
+	    id = RUS_armed_rebellion
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_unhappy_soldiers }	
+		prerequisite = { focus = RUS_bribing_officers }	
+		prerequisite = { focus = RUS_provocateurs_system }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 21
+		y = 8
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_arrest_cc
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_armed_rebellion }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 21
+		y = 9
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_provisional_goverment
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_arrest_cc }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 21
+		y = 10
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_stop_unrest
+		icon = GFX_focus_RUS_gapon
+		prerequisite = { focus = RUS_provisional_goverment }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 21
+		y = 11
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_race_for_power
+		icon = GFX_focus_RUS_kamenev
+		prerequisite = { focus = RUS_party_struggle }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 10
+		y = 2
+		cost = 5
+		completion_reward = {
+		    set_power_balance = {
+    		    id = RUS_party_power_balance
+    		    left_side = RUS_left_wing_side
+	            right_side = RUS_right_wing_side
+		    }
+		}
+	}
+	focus = {
+	    id = RUS_bukharin
+		icon = GFX_focus_RUS_kamenev
+		prerequisite = { focus = RUS_race_for_power }	
+		mutually_exclusive = { focus = RUS_kamenev }
+		avaiable = {
+		    is_puppet = no
+            power_balance_value = {
+                id = RUS_party_power_balance
+                value < -0.1
+            }
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 11
+		y = 3
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_kamenev
+		icon = GFX_focus_RUS_kamenev
+		prerequisite = { focus = RUS_race_for_power }	
+		mutually_exclusive = { focus = RUS_bukharin }
+		avaiable = {
+		    is_puppet = no
+			power_balance_value = {
+                id = RUS_party_power_balance
+                value > 0.1
+            }
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 9
+		y = 3
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = RUS_continue_course
+		icon = GFX_focus_RUS_kamenev
+		prerequisite = { focus = RUS_kamenev }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 9
+		y = 4
+		cost = 5
+		completion_reward = {
+		    
+		}
+	}
+	focus = {
+	    id = focus_RUS_old_guard
+		icon = GFX_focus_RUS_white_old_guard
+		prerequisite = { focus = RUS_opposition }	
+		mutually_exclusive = { focus = RUS_gapon }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 35
+		y = 2
+		cost = 5
+		completion_reward = {
+			RUS = {
+			    country_event = rus.8 
+				add_ideas = RUS_white_emigartion
+			}
+		}
+	}
+	focus = {
+	    id = RUS_with_devil
+		icon = GFX_focus_RUS_with_devil
+		prerequisite = { focus = focus_RUS_old_guard }	
+		mutually_exclusive = { focus = RUS_russian_people }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 38
+		y = 3
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_russian_people
+		icon = GFX_focus_RUS_russian_people
+		prerequisite = { focus = focus_RUS_old_guard }	
+		mutually_exclusive = { focus = RUS_with_devil }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 32
+		y = 3
+		cost = 5
+		completion_reward = {
+		    RUS = { country_event = rus.7 }
+		}
+	}
+	focus = {
+	    id = RUS_recourse
+		icon = GFX_focus_RUS_recourse
+		prerequisite = { focus = RUS_with_devil }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 38
+		y = 4
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_america
+		icon = GFX_focus_RUS_america
+		prerequisite = { focus = RUS_recourse }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 39
+		y = 5
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_britain
+		icon = GFX_focus_RUS_britain
+		prerequisite = { focus = RUS_recourse }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 37
+		y = 5
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_italy
+		icon = GFX_focus_RUS_italy
+		prerequisite = { focus = RUS_america focus = RUS_britain }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 37
+		y = 6
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_france
+		icon = GFX_focus_RUS_france
+		prerequisite = { focus = RUS_america focus = RUS_britain }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 39
+		y = 6
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_greece
+		icon = GFX_focus_RUS_greece
+		prerequisite = { focus = RUS_italy focus = RUS_france }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 38
+		y = 7
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_set_up_heradquarters
+		icon = GFX_focus_RUS_set_up_heradquarters
+		prerequisite = { focus = RUS_greece }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 38
+		y = 8
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_novocherkassk
+		icon = GFX_focus_RUS_novocherkassk
+		prerequisite = { focus = RUS_set_up_heradquarters }	
+		mutually_exclusive = { focus = RUS_sevastopol }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 39
+		y = 9
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_sevastopol
+		icon = GFX_focus_RUS_sevastopol
+		prerequisite = { focus = RUS_set_up_heradquarters }	
+		mutually_exclusive = { focus = RUS_novocherkassk }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 37
+		y = 9
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_active_preparation
+		icon = GFX_focus_RUS_active_preparation
+		prerequisite = { focus = RUS_sevastopol focus = RUS_novocherkassk }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 38
+		y = 10
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_militia
+		icon = GFX_focus_RUS_white_militia
+		prerequisite = { focus = RUS_active_preparation }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 38
+		y = 11
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_agitation
+		icon = GFX_focus_RUS_white_agitation
+		prerequisite = { focus = RUS_active_preparation }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 40
+		y = 11
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_cossacks
+		icon = GFX_focus_RUS_white_cossacks
+		prerequisite = { focus = RUS_active_preparation }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 36
+		y = 11
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_arms_buildup
+		icon = GFX_focus_RUS_arms_buildup
+		prerequisite = { focus = RUS_active_preparation }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 34
+		y = 11
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_save_russia_focus
+		icon = GFX_focus_RUS_white_save_russia
+		prerequisite = { focus = RUS_arms_buildup focus = RUS_militia focus = RUS_cossacks focus = RUS_agitation }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 38
+		y = 12
+		cost = 5
+		completion_reward = {
+		    RUS = { country_event = rus.14 }
+		}
+	}
+	focus = {
+	    id = RUS_brothers_slavs
+		icon = GFX_focus_RUS_brothers_slavs
+		prerequisite = { focus = RUS_russian_people }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 32
+		y = 4
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_militants_of_ramu
+		icon = GFX_focus_RUS_militants_of_ramu
+		prerequisite = { focus = RUS_brothers_slavs }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 32
+		y = 5
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_own_experience
+		icon = GFX_focus_RUS_own_experience
+		prerequisite = { focus = RUS_militants_of_ramu }	
+		mutually_exclusive = { focus = RUS_enemy_of_my_enemy }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 31
+		y = 6
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_enemy_of_my_enemy
+		icon = GFX_focus_RUS_enemy_of_my_enemy
+		prerequisite = { focus = RUS_militants_of_ramu }	
+		mutually_exclusive = { focus = RUS_own_exIRAience }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 33
+		y = 6
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_memory_kronstadt
+		icon = GFX_focus_RUS_memory_kronstadt
+		prerequisite = { focus = RUS_brothers_slavs }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 35
+		y = 5
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_naval_leaders
+		icon = GFX_focus_RUS_naval_leaders
+		prerequisite = { focus = RUS_memory_kronstadt }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 34
+		y = 7
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_royal_cadres
+		icon = GFX_focus_RUS_royal_cadres
+		prerequisite = { focus = RUS_memory_kronstadt }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 36
+		y = 7
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_party_terror
+		icon = GFX_focus_RUS_party_terror
+		prerequisite = { focus = RUS_enemy_of_my_enemy focus = RUS_own_exIRAience }	
+		mutually_exclusive = { focus = RUS_own_exIRAience }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 32
+		y = 7
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_false_testimony
+		icon = GFX_focus_RUS_false_testimony
+		prerequisite = { focus = RUS_party_terror }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 32
+		y = 8
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_church_blessing
+		icon = GFX_focus_RUS_church_blessing
+		prerequisite = { focus = RUS_own_exIRAience focus = RUS_enemy_of_my_enemy }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 30
+		y = 8
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_heirs_of_greatness
+		icon = GFX_focus_RUS_heirs_of_greatness
+		prerequisite = { focus = RUS_own_exIRAience focus = RUS_enemy_of_my_enemy }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 29
+		y = 9
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_grand_dukes
+		icon = GFX_focus_RUS_grand_dukes
+		prerequisite = { focus = RUS_heirs_of_greatness }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 29
+		y = 10
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_convene_council
+		icon = GFX_focus_RUS_convene_council
+		prerequisite = { focus = RUS_church_blessing }	
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 31
+		y = 9
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_metropolian_mutiny
+		icon = GFX_focus_RUS_metropolian_mutiny
+		prerequisite = { focus = RUS_naval_leaders }	
+		prerequisite = { focus = RUS_royal_cadres }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 34
+		y = 9
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_change_command_ramu
+		icon = GFX_focus_RUS_change_command_ramu
+		prerequisite = { focus = RUS_metropolian_mutiny }	
+		prerequisite = { focus = RUS_false_testimony }
+		prerequisite = { focus = RUS_grand_dukes }
+		prerequisite = { focus = RUS_convene_council }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 32
+		y = 11
+		cost = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+	    id = RUS_get_up_russian_people
+		icon = GFX_focus_RUS_get_up_russian_people
+		prerequisite = { focus = RUS_change_command_ramu }
+		avaiable = {
+		    is_puppet = no
+	    }
+		bypass = {
+		    RUS = { exists = no }
+		} 
+		x = 32
+		y = 12
+		cost = 5
+		completion_reward = {
+		}
+	}
+}

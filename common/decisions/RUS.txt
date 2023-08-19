@@ -1,0 +1,29 @@
+######
+###### 	RUSSIAN BALANCE OF POWER
+######
+###### 
+
+RUS_balance_of_power_category = {
+    RUS_bop_rally_for_the_nep
+        priority = 100
+	    icon = GFX_decision_eng_trade_unions_demand
+	    
+	    allowed = {
+		    original_tag = RUS
+	    }
+		
+		visible = {}
+		
+		available = {}
+		
+		cost = 75
+		
+		complete_effect = {
+		    add_power_balance_value = {
+                id = my_bop
+                value = -0.1
+                tooltip_side = RUS_right_wing_side
+            }
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters={
+	SUO_kullervo_manner={
+		name=SUO_kullervo_manner
+		portraits={
+			civilian={
+				large=GFX_SUO_kullervo_manner
+			}
+		}
+		country_leader={
+			ideology= classical_trotskism
+			desc = "POLITICS_SUO_KULLERVO_MANNER_DESC"
+			traits={ }
+			expire="2078.1.1.1"
+			id=-1
+
+        }
+	}
+}

@@ -1,0 +1,17 @@
+characters={
+	GNE_samuel_hoare={
+		name=GNE_samuel_hoare
+		portraits={
+			civilian={
+				large=GFX_GNE_samuel_hoare
+			}
+		}
+		country_leader={
+			ideology= conservatical_constitutional_monarchy
+			traits={ }
+			expire="2078.1.1.1"
+			id=-1
+
+        }
+	}
+}

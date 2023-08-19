@@ -1,0 +1,12 @@
+PSU = {
+	original_tag = RUS
+	has_country_flag = RUS_civil_war_communist
+}
+ARU = {
+	original_tag = AVS
+	has_country_flag = AVS_civil_war_authoritarianism
+}
+ARU = {
+	original_tag = OUN
+	has_country_flag = UMR_civil_war_nationalism
+}

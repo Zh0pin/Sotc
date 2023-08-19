@@ -1,0 +1,17 @@
+characters={
+	ITL_victor_emmanuil={
+		name=ITL_victor_emmanuil
+		portraits={
+			civilian={
+				large=GFX_ITL_victor_emmanuil
+			}
+		}
+		country_leader={
+			ideology= absolutely_monarchy
+			traits={ victorious_king }
+			expire="2078.1.1.1"
+			id=-1
+
+        }
+	}
+}

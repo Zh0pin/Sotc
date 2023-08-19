@@ -1,0 +1,78 @@
+#Zhopin DICKtator
+
+SUO_trotskism_RUS = {
+	color = rgb { 168 92 92 }
+	color_ui = rgb { 255 73 121 }
+}
+UMR_trotskism_RUS = {
+	color = rgb { 176 0 0 }
+	color_ui = rgb { 255 73 121 }
+}
+RUS_save_russia = {
+	color = rgb { 255 255 255 }
+	color_ui = rgb { 255 73 121 }
+}
+PSU_civil_war = {
+	color = rgb { 176 0 0 }
+	color_ui = rgb { 255 73 121 }
+}
+ARU_civil_war = {
+	color = rgb { 176 176 176 }
+	color_ui = rgb { 255 73 121 }
+}
+AVS_civil_war = {
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 255 73 121 }
+}
+UMR_civil_war = {
+	color = rgb { 148 43 43 }
+	color_ui = rgb { 255 73 121 }
+}
+OUN_civil_war = {
+	color = rgb { 143 137 54 }
+	color_ui = rgb { 255 73 121 }
+}
+PLE_GNE_conservatism = {
+	color = rgb { 188 109 194 }
+	color_ui = rgb { 255 73 121 }
+}
+EGK_conservatism_GNE = {
+	color = rgb { 188 109 194 }
+	color_ui = rgb { 255 73 121 }
+}
+IAQ_conservatism_GNE = {
+	color = rgb { 188 109 194 }
+	color_ui = rgb { 255 73 121 }
+}
+SAT_conservatism_GNE = {
+	color = rgb { 188 109 194 }
+	color_ui = rgb { 255 73 121 }
+}
+IND_conservatism_GNE = {
+	color = rgb { 188 109 194 }
+	color_ui = rgb { 255 73 121 }
+}
+AVT_conservatism_GNE = {
+	color = rgb { 188 109 194 }
+	color_ui = rgb { 255 73 121 }
+}
+NEZ_conservatism_GNE = {
+	color = rgb { 188 109 194 }
+	color_ui = rgb { 255 73 121 }
+}
+MMN_authoritarianism_JAN = {
+	color = rgb { 207 159 159}
+	color_ui = rgb { 255 73 121 }
+}
+MNN_authoritarianism_JAN = {
+	color = rgb { 207 159 159 }
+	color_ui = rgb { 255 73 121 }
+}
+PHL_conservatism_AME = {
+	color = rgb { 93 123 186 }
+	color_ui = rgb { 255 73 121 }
+}
+INN_liberalism_NET = {
+	color = rgb { 219 166 114 }
+	color_ui = rgb { 255 73 121 }
+}
